@@ -1,4 +1,4 @@
-const API_KEY = "01bbfad7fdf5be9bd27fee91e1b96c51";
+const API_KEY = import.meta.env.VITE_api_key;
 const requests = {
 	fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
 	fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
